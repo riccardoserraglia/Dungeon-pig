@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/inizio"
         android:layout_width="409dp"
         android:layout_height="385dp"
         android:background="#00FFFFFF"
