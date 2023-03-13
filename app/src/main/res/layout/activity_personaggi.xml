@@ -6,4 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".Personaggi">
 
+    <SearchView
+        android:id="@+id/pg_search"
+        android:layout_width="413dp"
+        android:layout_height="72dp"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <ListView
+        android:id="@+id/pg_list"
+        android:layout_width="409dp"
+        android:layout_height="656dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="74dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

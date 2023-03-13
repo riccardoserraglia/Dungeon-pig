@@ -6,4 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".Maiali">
 
+    <SearchView
+        android:id="@+id/pig_search"
+        android:layout_width="410dp"
+        android:layout_height="61dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <ListView
+        android:id="@+id/pig_list"
+        android:layout_width="409dp"
+        android:layout_height="667dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="63dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
