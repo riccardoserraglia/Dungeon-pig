@@ -8,23 +8,26 @@
 
     <SearchView
         android:id="@+id/pg_search"
-        android:layout_width="301dp"
-        android:layout_height="70dp"
-        tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="3dp" />
+        android:layout_width="326dp"
+        android:layout_height="69dp"
+        app:layout_constraintBottom_toTopOf="@+id/pg_list"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
         android:id="@+id/pg_list"
         android:layout_width="409dp"
         android:layout_height="656dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="74dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="1dp" />
 
     <Button
         android:id="@+id/home_pg"
-        android:layout_width="98dp"
-        android:layout_height="64dp"
+        android:layout_width="84dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="1dp"
         android:text="Button"
-        tools:layout_editor_absoluteX="305dp"
-        tools:layout_editor_absoluteY="6dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pg_search"
+        tools:layout_editor_absoluteY="2dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

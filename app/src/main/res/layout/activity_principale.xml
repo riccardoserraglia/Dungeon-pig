@@ -44,9 +44,11 @@
         android:layout_height="wrap_content"
         android:text="Maiali"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Regole"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Personaggi"
-        app:layout_constraintVertical_bias="0.531"
-        tools:layout_editor_absoluteX="63dp" />
+        app:layout_constraintVertical_bias="0.531" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
