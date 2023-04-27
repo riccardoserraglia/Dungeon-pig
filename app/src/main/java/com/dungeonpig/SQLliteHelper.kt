@@ -24,7 +24,7 @@ class SQLliteHelper (context: Context) : SQLiteOpenHelper (context, DATABASE_NAM
               + attacco + "INTEGER"
               + ciapapuerk + "INTEGER"
               + resistenza + "INTEGER"
-              + descrizione+ "INTEGER"
+              + descrizione+ "TEXT"
               + immagine + "DRAWABLE" + ")")
         p0?.execSQL (createTBlpg)
     }
