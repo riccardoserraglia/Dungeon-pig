@@ -10,3 +10,4 @@ data class pg(
     var resistenza: Int,
     var descrizione: String,
     var immagine: Drawable,
+)

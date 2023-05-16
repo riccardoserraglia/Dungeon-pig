@@ -1,9 +1,11 @@
 package com.dungeonpig
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
+@Suppress("ASSIGNED_BUT_NEVER_ACCESSED_VARIABLE")
 class SQLliteHelper (context: Context) : SQLiteOpenHelper (context, DATABASE_NAME, factory,  DATABASE_VERSION){
    companion object{
        private const val DATABASE_VERSION=1
@@ -18,6 +20,7 @@ class SQLliteHelper (context: Context) : SQLiteOpenHelper (context, DATABASE_NAM
        private var immagine=null
 
    }
+    @SuppressLint("SuspiciousIndentation")
     override fun onCreate(p0: SQLiteDatabase?) {
       val createTBlpg= ("CREATE TABLE"+ TBLpg + "("
               + nome + "TEXT PRIMARY KEY"
@@ -35,9 +38,9 @@ class SQLliteHelper (context: Context) : SQLiteOpenHelper (context, DATABASE_NAM
     fun getpg(NOME : String){
         val selectQuery ="SELECT * FROM $TBLpg WHERE $nome=$NOME"
         val db= this.readableDatabase
-        val cursor: Cursor?
+
         try {
-        cursor =db.rawQuery(selectQuery, null)
+        val cursor =db.rawQuery(selectQuery, null)
         }catch (e: java.lang.Exception){
             e.printStackTrace()
         }

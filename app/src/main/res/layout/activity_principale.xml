@@ -4,51 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgound"
     tools:context=".principale">
 
     <Button
         android:id="@+id/Regole"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="248dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginEnd="16dp"
+        android:drawableTop="@drawable/regole"
         android:text="Regole"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Carte" />
-
-    <Button
-        android:id="@+id/Personaggi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="EROI"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Carte"
-        app:layout_constraintHorizontal_bias="0.368"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.245" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Carte"
+        app:layout_constraintVertical_bias="0.285"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/Carte"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="168dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="16dp"
+        android:drawableTop="@drawable/la_ghianda_d_oro"
         android:text="CARTE"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/Maiali"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:drawableTop="@drawable/maiali"
         android:text="Maiali"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Regole"
-        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintHorizontal_bias="0.197"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Personaggi"
-        app:layout_constraintVertical_bias="0.531" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/Personaggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:backgroundTint="@color/black"
+        android:drawableTop="@drawable/eroi"
+        android:text="Personaggi"
+        app:layout_constraintBottom_toTopOf="@+id/Maiali"
+        app:layout_constraintEnd_toStartOf="@+id/Carte"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727"
+        app:strokeColor="@color/black"
+        tools:ignore="HardcodedText" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

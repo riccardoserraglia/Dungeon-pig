@@ -4,37 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgound"
+    android:backgroundTint="@color/backgound"
     tools:context=".Regole">
 
     <EditText
         android:id="@+id/contenitore_regole"
         android:layout_width="409dp"
         android:layout_height="665dp"
+        android:editable="false"
         android:ems="10"
         android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:text="ecco a voi le regole ufficiali del gioco da tavolo di dungeon pig"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="insideInset"
+        android:text="INIZIAMO
+        Possono giocare a DungeonPig da 2 fino a 6 persone.
+        I giocatori si dividono in 2 squadre e ognuno sceglie il proprio Personaggio, sistemando la carta in una delle basette. Lo scopo del gioco è acciuffare un maialino magico all’interno del sotterraneo e riportarlo nella propria Base prima della squadra avversaria. Prendi il mazzetto di carte MagiPuerko, estrai da esso uno dei due Puerko “normali” e sistema la carta in una basetta come hai fatto per i Personaggi: d’ora in poi questo sarà il Puerko, la magica bestiola da catturare e riportare alla Base per vincere! Mescola le rimanenti carte MagiPuerko e mettile a faccia in giù sul tavolo di fianco al dungeon. Per creare il dungeon, il sotterraneo in cui si giocherà la partita estrai le carte Base e la Sala Centrale dal mazzo, quindi mescola le rimanenti carte e posizionane sul tavolo a faccia in giù quante ne desideri, formando una plancia che varierà ad ogni partita. Per la prima volta è consigliabile creare un quadrato di 3 carte per lato o un rettangolo di 5x3. Quando sarai più esperto, potrai dare libero sfogo alla fantasia e creare dungeon più complessi. Ricorda di piazzare la Sala Centrale in mezzo al dungeon (come carta centrale appunto) e le basi ai lati opposti in maniera speculare. Ora puoi piazzare il Puerko nella Sala Centrale e i Personaggi nelle rispettive Basi.
+        METTERE ALLA PROVA I PERSONAGGI
+        Durante la partita accadrà che uno dei personaggi dovrà effettuare “una prova su qualcosa”. Come puoi vedere dalla Legenda su questo regolamento, ogni Personaggio possiede 3 punteggi: -Attacco(A): indica la capacità di colpire un avversario -CiapaPuerk (C): indica l’abilità nell’acciuffare il Puerko -Resistenza (R): indica il vigore fisico di un Personaggio e quanto può incassare prima di andare KO Se al tuo Personaggio viene richiesta una prova su una di queste caratteristiche, lancia il dado: se ottieni un risultato inferiore al tuo punteggio hai superato la prova, altrimenti hai fallito! Per esempio se Prince il Coniglio viene colpito da una trappola e si richiede una prova di Resistenza, egli (che ha R3) dovrà ottenere al dado un 1 o un 2 per riuscire a rimanere in piedi.
+        IL TURNO
+        Una volta posizionate le pedine, il giocatore che assomiglia di più al suo Personaggio (o chi assomiglia di più ad un maialino) inizia per primo e la partita comincia! L’insieme dei turni dei giocatori è chiamato giro. Quando tutti i personaggi hanno giocato il proprio turno, il giro è finito e se ne inizia uno nuovo. All’inizio di ogni giro, prima che chiunque giochi il proprio turno, se il Puerko è già stato spaventato ed è libero (ossia non è tenuto da nessun Personaggio) va mosso usando il dado (vedi più avanti). Durante il proprio turno ogni Personaggio può eseguire un massimo di 2 Azioni. Può eseguirne meno se vuole (o nessuna), oppure ripetere la stessa Azione 2 volte. In alcuni casi è possibile che un personaggio abbia diritto ad un’Azione gratuita. Le Azioni gratuite sono extra e non contano per il totale di 2 azioni a turno. Le Azioni possibili sono:
+        -	MUOVERE la pedina in un’area adiacente (non si può muovere in diagonale)
+        -	cercare di PRENDERE il Puerko se la pedina Puerko si trova nella tua stessa Area (vedi più avanti)
+        -	ATTACCARE un altro Personaggio che si trovi nella tua stessa Area (vedi più avanti)
+        Se un Personaggio è il primo ad entrare in un’Area, ovvero muove la propria pedina in una carta Area che è ancora coperta, egli gira la carta e ne annuncia gli effetti a tutti i giocatori.
+        IL PUERKO
+        Ad inizio partita, il Puerko si trova nella Sala Centrale e lì rimane fino a quando il primo Personaggio entra in quell’Area. Appena ciò accade, il Puerko si spaventa e va immediatamente mosso (anche se il giocatore non ha terminato il suo turno). Quando si muove il Puerko, un giocatore lancia il dado e confronta il risultato ottenuto con la PuerkoBussola nella Sala Centrale: con un risultato da 2 a 5 il Puerko si muove di un’Area nella direzione indicata dalla bussola; con un risultato di 6, il Puerko resta fermo nella stessa Area; con un risultato di 1, si scatena la magia della brillomelma: il Puerko si muta! Pesca una nuova carta a caso dal mazzetto delle carte MagiPuerko e controlla cosa succede. Quando tutte le carte MagiPuerko sono state pescate, rimescolale a formare un nuovo mazzetto. Se un Personaggio si trova nella stessa Area del Puerko, egli può provare ad acciuffarlo: lancia il dado e se il risultato è minore del proprio CiapaPuerk (C) il Puerko è stato preso, metti la carta Puerko sulla tua stessa basetta: ora hai con te il Puerko e devi riportarlo alla tua Base per vincere la partita! Se invece non riesci a superare la prova, il Puerko sguscia via terrorizzato: muovilo immediatamente lanciando il dado. Un Personaggio che tiene con sé il Puerko viene chiamato “Portatore di Puerko” (o più brevemente PdP) e segue queste regole:
+        -Un PdP può tenere un Puerko alla volta
+        -Un PdP che inizia il proprio turno tenendo il Puerko ha diritto ad 1 sola Azione al posto di 2
+        -Un PdP può decidere di lasciar andare il Puerko in qualsiasi momento. Se ciò accade, il Puerko va immediatamente mosso lanciando il dado
+        -Se un PdP viene colpito, egli lascia immediatamente andare il Puerko, che va subito mossa lanciando il dado.
+        ATTACCARE
+        Ben presto nella partita si arriverà al punto in cui bisognerà “convincere” gli avversari a mollare il Puerko. Un Personaggio può Attaccare un qualsiasi Personaggio che si trovi nella sua stessa Area, effettuando una prova di Attacco. Se ottieni al dado un risultato minore del tuo punteggio di Attacco(A), sei riuscito a colpire il tuo avversario. Se invece non riesci a superare la prova, lo hai mancato! Se riesci a colpire l’avversario egli deve innanzitutto mollare il Puerko se lo ha in mano (muovilo con il dado), dopodiché dovrà effettuare una prova sul suo punteggio di Resistenza. Se al dado ottiene un risultato minore della propria Resistenza (R) il colpo non era poi così forte e il gioco può continuare. Ma se la prova di Resistenza fallisce, il Personaggio colpito viene messo KO! Sposta immediatamente la sua pedina nella sua carta Base di partenza: quel Personaggio salterà il suo prossimo turno poiché troppo frastornato dalla botta subita.
+        VITTORIA
+        Quando un Personaggio con un Puerko in mano si posiziona nella propria Base di partenza, la sua squadra è la vincitrice!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:verticalScrollbarPosition="right"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/regole" />
+        app:layout_constraintTop_toBottomOf="@+id/regole"
+        tools:ignore="Deprecated" />
 
     <TextView
         android:id="@+id/regole"
-        android:layout_width="326dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="4dp"
-        android:text="Regolamento dungreon pig"
+        android:layout_width="328dp"
+        android:layout_height="63dp"
+        android:text="Regole"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/home_regole"
-        android:layout_width="83dp"
-        android:layout_height="67dp"
-        android:text="Button"
+        android:layout_width="81dp"
+        android:layout_height="66dp"
         app:layout_constraintBottom_toTopOf="@+id/contenitore_regole"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/regole"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,16 +1,19 @@
 package com.dungeonpig
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 
 class principale : AppCompatActivity() {
+    @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_principale)
-        val button1= findViewById<Button>(R.id.Personaggi)
-        button1.setOnClickListener{
+        val Button1= findViewById<Button>(R.id.Personaggi)
+        Button1.setOnClickListener{
             val intent = Intent(this, Personaggi::class.java)
             startActivity(intent)}
 
