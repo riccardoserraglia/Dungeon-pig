@@ -5,12 +5,10 @@ import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import android.widget.SimpleCursorAdapter
 
 @Suppress("ASSIGNED_BUT_NEVER_ACCESSED_VARIABLE")
 class SQLliteHelper (context: Context) : SQLiteOpenHelper (context, DATABASE_NAME, factory,  DATABASE_VERSION){
    companion object{
-
 
        private const val DATABASE_VERSION=1
        private const val DATABASE_NAME= "pg.db"
@@ -39,15 +37,9 @@ class SQLliteHelper (context: Context) : SQLiteOpenHelper (context, DATABASE_NAM
     override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {
         TODO("Not yet implemented")
     }
-    fun getpg(NOME : String){
-        val selectQuery ="SELECT * FROM $TBLpg WHERE $nome=$NOME"
-        val db= this.readableDatabase
-
-        try {
-        val cursor =db.rawQuery(selectQuery, null)
-        }catch (e: java.lang.Exception){
-            e.printStackTrace()
-        }
-        db.execSQL(selectQuery)
+    fun executeCustomQuery(query: String): Cursor {
+        val db = readableDatabase
+        return db.rawQuery(query, null)
     }
+
 }

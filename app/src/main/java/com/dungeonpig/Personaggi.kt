@@ -16,4 +16,11 @@ class Personaggi : AppCompatActivity() {
             val intent = Intent(this, principale::class.java)
             startActivity(intent)}
 
-}}
+        val dbHelper = SQLliteHelper(this)
+        val query = "SELECT nome FROM TBLpg"
+        val cursor = dbHelper.executeCustomQuery(query)
+
+
+
+
+    }}
