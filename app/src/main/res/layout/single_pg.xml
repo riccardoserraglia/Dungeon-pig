@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Resistenza"
+        android:layout_width="203dp"
+        android:layout_height="101dp"
+        android:text="Resistenza"
+        android:editable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ciapapuerk"
+        tools:ignore="Deprecated" />
+
+    <ImageView
+        android:id="@+id/pg_image"
+        android:layout_width="208dp"
+        android:layout_height="324dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="" />
+
+    <TextView
+        android:id="@+id/Attacco"
+        android:layout_width="205dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="4dp"
+        android:text="Attacco"
+        android:editable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Deprecated" />
+
+    <TextView
+        android:id="@+id/Ciapapuerk"
+        android:layout_width="205dp"
+        android:layout_height="108dp"
+        android:text="Ciapapuerk"
+        android:editable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Attacco"
+        tools:ignore="Deprecated" />
+
+    <EditText
+        android:id="@+id/pg_description"
+        android:layout_width="407dp"
+        android:layout_height="406dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:editable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="Deprecated" />
+</androidx.constraintlayout.widget.ConstraintLayout>

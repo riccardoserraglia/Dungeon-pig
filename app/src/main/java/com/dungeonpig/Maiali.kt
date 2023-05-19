@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.ListView
 
 class Maiali : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,5 +14,9 @@ class Maiali : AppCompatActivity() {
         ImageButton1.setOnClickListener{
             val intent = Intent(this, principale::class.java)
             startActivity(intent)}
+
+
+
+
     }
 }

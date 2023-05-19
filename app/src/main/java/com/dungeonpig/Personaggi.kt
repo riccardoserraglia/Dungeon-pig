@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.ListView
+import android.widget.SimpleCursorAdapter
 
 class Personaggi : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,5 +15,5 @@ class Personaggi : AppCompatActivity() {
         ImageButton1.setOnClickListener{
             val intent = Intent(this, principale::class.java)
             startActivity(intent)}
-    }
-}
+
+}}

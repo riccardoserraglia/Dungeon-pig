@@ -2,12 +2,16 @@ package com.dungeonpig
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import android.widget.SimpleCursorAdapter
 
 @Suppress("ASSIGNED_BUT_NEVER_ACCESSED_VARIABLE")
 class SQLliteHelper (context: Context) : SQLiteOpenHelper (context, DATABASE_NAME, factory,  DATABASE_VERSION){
    companion object{
+
+
        private const val DATABASE_VERSION=1
        private const val DATABASE_NAME= "pg.db"
        private val factory=null
